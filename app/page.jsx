@@ -21,22 +21,22 @@ export default async function Home() {
           <div className="sider max-w-[126px] w-full flex flex-col items-center  gap-[120px] bg-[#ffffff57] ">
             <img className="mt-12" src="o.svg" alt="" />
             <div className="routes flex items-center flex-col gap-[40px]">
-              <Link href="/404">
+              <Link href="/">
                 <GrHome className="text-2xl text-[#525252]" />
               </Link>
-              <Link href="/404">
+              <Link href="/page1">
                 <img src="2.svg" alt="" />
               </Link>
-              <Link href="/404">
+              <Link href="/page2">
                 <img src="3.svg" alt="" />
               </Link>
-              <Link href="/404">
+              <Link href="/page3">
                 <img src="4.svg" alt="" />
               </Link>
-              <Link href="/404">
+              <Link href="/page4">
                 <img src="5.svg" alt="" />
               </Link>
-              <Link href="/404">
+              <Link href="/page5">
                 <img src="6.svg" alt="" />
               </Link>
             </div>
