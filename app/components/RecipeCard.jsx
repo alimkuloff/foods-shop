@@ -18,10 +18,14 @@ function RecipeCard({ recipe }) {
       <img className="w-[200px] rounded-full" src={recipe.image} alt={recipe.name} />
       <h2 className="text-center mt-[180px] text-xl font-bold">{recipe.name}</h2>
       <p className="mt-2 min-h-[140px]"><strong>Ingredients:</strong> {recipe.ingredients.join(', ')}</p>
-      <div className="rating flex justify-center mt-2">
+      <div className="rating flex gap-2 justify-center items-center mt-2">
         {renderRating(recipe.rating)}
+        <p className="text-xl font-bold text-yellow-700">{recipe.rating}</p>
       </div>
-      <b className="text-xl font-medium mt-2">${recipe.prepTimeMinutes}</b>
+      <div className="flex gap-2 justify-center items-center mt-2">
+      <b className="text-xl font-medium mt-2 mr-20">${recipe.prepTimeMinutes}</b>
+      <button className="bg-black hover:bg-gray-700 text-white text-[30px] px-4 py-1 rounded-[50%]">+</button>
+      </div>
     </div>
   );
 }
