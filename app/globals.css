@@ -2,32 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.sider{
+    height: full;
+    border-right: 2px solid #fff;
+    border-radius:0px 30px 30px 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-text>h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hero-text>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #676161;
+}
+
+.header{
+    max-width: 1140px;
+    width: 100%;
+    margin-top: 25px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #f8f1f1a5;
+}
+
+.header h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #676161;
+}
+
+.content input{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    text-indent: 20px;
+}
+
+.category{
+    max-width: 220px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #fff;
+    background-color: #f8f1f1a5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 0 30px;
+}
+
+.category:hover{
+    border-color: #D41A24;
+    background-color: #d41a2346;
+    transition: 0.3s;
+}
+
+.recipe-card{
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #f8f1f1a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+    padding: 20px;
+    position: relative;
+}
+
+.recipe-card>img{
+    position: absolute;
+    top: -5%;
+}
+
+.recipe-card:hover{
+    border-color: #D41A24;
+    background-color: #d41a2346;
+    transition: 0.3s;
 }
